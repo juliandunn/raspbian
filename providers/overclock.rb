@@ -6,13 +6,13 @@ preset_map = {
     :clock => 700,
     :core => 250,
     :sdram => 400,
-    :overvolt = 0
+    :overvolt => 0
   },
   :modest => {
     :clock => 800,
     :core => 250,
     :sdram => 400,
-    :overvolt = 0
+    :overvolt => 0
   },
   :medium => {
     :clock => 900,
