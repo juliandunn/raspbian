@@ -20,14 +20,14 @@
 # Source: http://blog.schlomo.schapiro.org/2013/11/setting-hostname-from-dhcp-in-debian.html
 if node['raspbian']['set_hostname_from_dhcp']
   file '/etc/hostname' do
-    content 'localhost'
+    content "localhost\n"
     owner 'root'
     group node['root_group']
     mode '0644'
   end
 
   file '/etc/dhcp/dhclient-enter-hooks.d/unset_old_hostname' do
-    content 'unset old_host_name'
+    content "unset old_host_name\n"
     owner 'root'
     group node['root_group']
     mode '0644'
